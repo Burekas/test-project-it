@@ -1,0 +1,26 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - './frontend:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+  backend:
+    build:
+      context: ./backend
+    command: bash -c "python ./load_sample_data.py && python -um app.main"
+    depends_on:
+        - db
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend/:/backend
+    links:
+      - db
+  db:
+    image: mongo:3.6.5

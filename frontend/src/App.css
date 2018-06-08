@@ -1,0 +1,16 @@
+.App {
+  margin: auto;
+  margin-top: 50px;
+  width: 40%;
+  border: 1px dotted black;
+  padding: 20px
+}
+
+.App-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}

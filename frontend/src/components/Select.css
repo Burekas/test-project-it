@@ -1,0 +1,10 @@
+.Select, .Select-label {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+}
+
+.Select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

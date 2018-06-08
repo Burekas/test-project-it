@@ -1,0 +1,6 @@
+mongo:
+  database: testprojectdb
+  collection: testcoll
+  host: db
+  port: 27017
+port: 8080

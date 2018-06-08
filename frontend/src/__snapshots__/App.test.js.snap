@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App has a valid snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-title"
+    >
+      Test Project IT
+    </h1>
+  </header>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`Select has a valid snapshot 1`] = `
+<div>
+  <label
+    className="Select-label"
+  >
+    Label
+    <select
+      className="Select"
+      defaultValue=""
+      onChange={[Function]}
+    >
+      <option
+        value=""
+      >
+         -- Select an option -- 
+      </option>
+      <option
+        value="1"
+      >
+        First
+      </option>
+      <option
+        value="2"
+      >
+        Second
+      </option>
+    </select>
+  </label>
+</div>
+`;
